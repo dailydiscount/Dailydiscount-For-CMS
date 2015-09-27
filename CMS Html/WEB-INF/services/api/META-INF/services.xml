@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+	<service name="loginWS" targetNamespace="http://inf.axis2/">
+		<description>登录 service</description>
+		<schema schemaNamespace="http://inf.axis2/" />
+		<parameter name="ServiceClass" locked="false">com.ws.LoginWS</parameter>
+		
+		<messageReceivers>
+
+　　				<messageReceiver mep= "" class = "org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+
+　　<messageReceiver mep= "" class = "org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+
+　　</messageReceivers> 
+	</service>
+
+	
+	<messageFormatter contentType="application/json"
+                   class="org.apache.axis2.json.JSONMessageFormatter"/>
+    <messageFormatter contentType="application/json/badgerfish"
+                   class="org.apache.axis2.json.JSONBadgerfishMessageFormatter"/>
+
+	
+
+	<service name="indexWS" targetNamespace="http://inf.axis2/">
+		<description>首页 service</description>
+		<schema schemaNamespace="http://inf.axis2/" />
+		<parameter name="ServiceClass" locked="false">com.ws.IndexWS</parameter>
+	</service>
+ 
+</serviceGroup> 

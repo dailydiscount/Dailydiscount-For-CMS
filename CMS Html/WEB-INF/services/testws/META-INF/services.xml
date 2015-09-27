@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+	<service name="loginWS" targetNamespace="http://inf.axis2/" >
+		<description>JNLPGenerator service</description>
+		<schema schemaNamespace="http://inf.axis2/" />
+		<parameter name="ServiceClass" locked="false">com.ws.LoginWS</parameter>
+	</service>
+</serviceGroup> 
